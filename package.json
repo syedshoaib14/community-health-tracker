@@ -1,0 +1,15 @@
+{
+  "name": "community-health-tracker",
+  "version": "1.0.0",
+  "description": "Community Health Tracker - Frontend with JSON Server",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:frontend\"",
+    "dev:server": "cd json-server && npm install && npm start",
+    "dev:frontend": "cd frontend && npm install && npm run dev",
+    "install:all": "cd json-server && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
